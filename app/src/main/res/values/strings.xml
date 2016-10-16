@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MHSHL Stats</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="name_qcb">Quad City Blues</string>
+    <string name="name_dbq">Dubuque Devils</string>
+    <string name="name_cdr">Cedar Rapids Roughriders</string>
+    <string name="name_wat">Waterloo Warriors</string>
+    <string name="name_dmo">Des Moines Oak Leafs</string>
+    <string name="name_dmc">Des Moines Capitals</string>
+    <string name="name_ams">Ames Little Cyclones</string>
+    <string name="name_mcm">Mason City Mohawks</string>
+    <string name="name_scm">Sioux City Metros</string>
+    <string name="name_ojl">Omaha Junior Lancers</string>
+    <string name="name_ljs">Lincoln Junior Stars</string>
+    <string name="name_kcj">Kansas City Jets</string>
+
+    <string name="rink_qcb">Quad Cities</string>
+    <string name="rink_dbq">Dubuque</string>
+    <string name="rink_cdr">Cedar Rapids</string>
+    <string name="rink_wat">Waterloo</string>
+    <string name="rink_dmo">Des Moines (Metro)</string>
+    <string name="rink_dmc">Des Moines (Buccaneer)</string>
+    <string name="rink_ams">Ames</string>
+    <string name="rink_mcm">Mason City</string>
+    <string name="rink_scm">Sioux City</string>
+    <string name="rink_ojl">Omaha</string>
+    <string name="rink_ljs">Lincoln</string>
+    <string name="rink_kcj">Kansas City</string>
+
+    <string-array name="varsity_spinner_array">
+        <item>Varsity</item>
+        <item>JV</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

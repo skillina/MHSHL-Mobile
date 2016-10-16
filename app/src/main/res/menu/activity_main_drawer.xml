@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/season_spinner"
+        android:title="Season"
+        app:actionLayout="@layout/layout_spinner"/>
+
+    <item
+        android:id="@+id/varsity_spinner"
+        android:title="Division"
+        app:actionLayout="@layout/layout_spinner"/>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ranking"
+            android:icon="@drawable/ic_ranking"
+            android:title="Rankings" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_calendar"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_teams"
+            android:icon="@drawable/ic_list"
+            android:title="Teams" />
+        <item
+            android:id="@+id/nav_leaders"
+            android:icon="@drawable/ic_players"
+            android:title="Leaders" />
+    </group>
+
+
+</menu>

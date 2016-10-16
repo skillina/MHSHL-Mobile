@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Player Name"
+        android:layout_weight="1"
+        android:id="@+id/playerName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="ABR"
+        android:id="@+id/teamAbbr"/>
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:text="GP"
+        android:id="@+id/gamesPlayed"/>
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:text="G"
+        android:id="@+id/goals"/>
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:text="a"
+        android:id="@+id/assists"/>
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:text="pts"
+        android:id="@+id/points"/>
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:text="PIM"
+        android:id="@+id/penalties"/>
+
+</LinearLayout>

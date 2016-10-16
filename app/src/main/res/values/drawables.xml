@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_launcher" type="drawable">@drawable/mhshl</item>
+
+    <item name="ic_qcb" type="drawable">@drawable/qcb</item>
+    <item name="ic_dbq" type="drawable">@drawable/dbq</item>
+    <item name="ic_cdr" type="drawable">@drawable/cdr</item>
+    <item name="ic_wat" type="drawable">@drawable/wat</item>
+    <item name="ic_dmo" type="drawable">@drawable/dmo</item>
+    <item name="ic_dmc" type="drawable">@drawable/dmc</item>
+    <item name="ic_ams" type="drawable">@drawable/ams</item>
+    <item name="ic_mcm" type="drawable">@drawable/mcm</item>
+    <item name="ic_scm" type="drawable">@drawable/scm</item>
+    <item name="ic_ojl" type="drawable">@drawable/ojl</item>
+    <item name="ic_ljs" type="drawable">@drawable/ljs</item>
+    <item name="ic_kcj" type="drawable">@drawable/kcj</item>
+</resources>

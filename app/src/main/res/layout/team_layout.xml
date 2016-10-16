@@ -1,0 +1,17 @@
+<net.skillina.mhshl_android.TeamLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- put first view to left. -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_position="left"
+    android:layout_gravity="fill_vertical|center_horizontal"
+    android:text="l1"/>
+
+
+
+</net.skillina.mhshl_android.TeamLayout>
