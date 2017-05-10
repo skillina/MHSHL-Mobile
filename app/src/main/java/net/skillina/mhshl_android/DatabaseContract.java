@@ -57,6 +57,7 @@ public final class DatabaseContract {
             TeamEntry.COLUMN_NAME_GOALS_AGAINST + " INTEGER," +
             TeamEntry.COLUMN_NAME_PENALTY_MINUTES + " INTEGER," +
             TeamEntry.COLUMN_NAME_STREAK + " INTEGER," +
+            TeamEntry.COLUMN_NAME_RANK + " TEXT," +
             TeamEntry.COLUMN_NAME_KEY + " INTEGER UNIQUE," +
             TeamEntry.COLUMN_NAME_SEASON + " INTEGER );";
 
@@ -195,6 +196,7 @@ public final class DatabaseContract {
         public static final String COLUMN_NAME_KEY = "majorKey";
 
         // Right Side
+        public static final String COLUMN_NAME_RANK = "rank";
         public static final String COLUMN_NAME_WINS = "wins";
         public static final String COLUMN_NAME_LOSSES = "losses";
         public static final String COLUMN_NAME_OVERTIME_LOSSES = "otLosses";

@@ -21,7 +21,7 @@ import java.util.Arrays;
  */
 public class DatabaseHelper extends SQLiteOpenHelper implements AdapterView.OnItemSelectedListener{
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DATABASE_NAME = "MHSHL.db";
 
     public DatabaseHelper(Context context){

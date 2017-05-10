@@ -36,10 +36,13 @@ public class Team {
 
     public int streak;
 
+    public int rank;
+
+
     public Team(){
         abbreviation = city = name = "NUL";
         pointstreakID = season = key = 0;
-
+        rank = 0;
         gamesPlayed = wins = losses = otLosses = soLosses = 0;
         points = goalsFor = goalsAgainst = 0;
         penaltyMinutes = 0;
@@ -58,6 +61,8 @@ public class Team {
         points = goalsFor = goalsAgainst = 0;
         penaltyMinutes = 0;
         streak = 0;
+
+        rank = 0;
     }
 
     public Team(Cursor c){
@@ -78,6 +83,8 @@ public class Team {
         goalsAgainst = c.getInt(c.getColumnIndexOrThrow(DatabaseContract.TeamEntry.COLUMN_NAME_GOALS_AGAINST));
         penaltyMinutes = c.getInt(c.getColumnIndexOrThrow(DatabaseContract.TeamEntry.COLUMN_NAME_PENALTY_MINUTES));
         streak = c.getInt(c.getColumnIndexOrThrow(DatabaseContract.TeamEntry.COLUMN_NAME_STREAK));
+
+        rank = c.getInt(c.getColumnIndexOrThrow(DatabaseContract.TeamEntry.COLUMN_NAME_RANK));
     }
 
     public Team(String s){
@@ -158,6 +165,8 @@ public class Team {
             gf += goalsFor(games.get(i));
             ga += goalsAgainst(games.get(i));
         }
+
+        rank = getRank();
 
         wins = w;
         losses = l;
@@ -252,6 +261,8 @@ public class Team {
         values.put(DatabaseContract.TeamEntry.COLUMN_NAME_GOALS_AGAINST,goalsAgainst);
         values.put(DatabaseContract.TeamEntry.COLUMN_NAME_PENALTY_MINUTES,penaltyMinutes);
         values.put(DatabaseContract.TeamEntry.COLUMN_NAME_STREAK,streak);
+
+        values.put(DatabaseContract.TeamEntry.COLUMN_NAME_RANK, rank);
 
         return values;
     }

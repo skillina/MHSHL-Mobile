@@ -10,7 +10,8 @@ public final class TeamUtils {
     public static String resolveTeamRank(String abbr, int season){
         DatabaseHelper dbh = new DatabaseHelper(App.context);
         Team team = dbh.getTeam(abbr, season);
-        return "#" + String.valueOf(team.getRank());
+        dbh.close();
+        return "#" + String.valueOf(team.rank);
     }
 
 }

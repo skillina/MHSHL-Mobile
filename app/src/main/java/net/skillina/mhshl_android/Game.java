@@ -132,12 +132,17 @@ public class Game {
 
         LinearLayout layout = new LinearLayout(context);
 
+        DatabaseHelper dbh = new DatabaseHelper(context);
+        Team home = dbh.getTeam(homeTeam, season);
+        Team away = dbh.getTeam(awayTeam, season);
+        dbh.close();
+
         ((Activity) context).getLayoutInflater().inflate(R.layout.layout_game, layout);
         ( (ImageView) layout.findViewById(R.id.homeLogo)).setImageResource(LeagueUtils.resolveTeamLogo(homeTeam));
-        ( (TextView) layout.findViewById(R.id.homeSeed)).setText(TeamUtils.resolveTeamRank(homeTeam, season));
+        ( (TextView) layout.findViewById(R.id.homeSeed)).setText("#" + home.rank);
 
         ( (ImageView) layout.findViewById(R.id.awayLogo)).setImageResource(LeagueUtils.resolveTeamLogo(awayTeam));
-        ( (TextView) layout.findViewById(R.id.awaySeed)).setText(TeamUtils.resolveTeamRank(awayTeam, season));
+        ( (TextView) layout.findViewById(R.id.awaySeed)).setText("#" + away.rank);
 
         ( (TextView) layout.findViewById(R.id.homeScore)).setText(String.valueOf(homeScore));
         ( (TextView) layout.findViewById(R.id.awayScore)).setText(String.valueOf(awayScore));
